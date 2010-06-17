@@ -12,7 +12,6 @@
  */
 class Odds extends BaseOdds
 {
-/*
 	public function save(Doctrine_Connection $con = null)
 	{
 
@@ -22,19 +21,24 @@ class Odds extends BaseOdds
 		        ->andWhere('o.active = 1')
 		    	->fetchOne();
 
-		#if(count($q) > 0)
-		if(isset($q))
-		{
-			#foreach($q as $key => $oddity)
-			#{
-				$q->setActive('false');
-				$q->save();
-				#$oddity->setActive('false');
-				#$oddity->save();
-			#}
-		}
+		$this->deactivate($q);
 
 		parent::save();
 	}
-*/
+
+	public function deactivate($model)
+	{
+		if(isset($model))
+		{
+				$model->setActive('false');
+				$model->save();
+		}
+
+		#if(count($q) > 0){
+			#foreach($q as $key => $oddity)
+			#{
+				#$oddity->setActive('false');
+				#$oddity->save();
+			#}}
+	}
 }

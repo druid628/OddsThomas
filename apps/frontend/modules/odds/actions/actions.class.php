@@ -13,4 +13,12 @@ require_once dirname(__FILE__).'/../lib/oddsGeneratorHelper.class.php';
  */
 class oddsActions extends autoOddsActions
 {
+	public function executeNew(sfWebRequest $request)
+	{
+		$game = $request->getParameter('game_id');
+		$this->form = new OddsForm();
+		$this->odds = $this->form->getObject();
+		if(isset($game))
+			$this->form->setGame($game);
+	}
 }

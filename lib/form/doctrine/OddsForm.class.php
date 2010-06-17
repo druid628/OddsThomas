@@ -14,4 +14,12 @@ class OddsForm extends BaseOddsForm
   {
 	  unset($this['created_at'], $this['updated_at']);
   }
+
+  public function setGame($game_id)
+  {
+	  $q = Doctrine::getTable('Game')->find($game_id);
+	  $ws = $this->getWidgetSchema();
+	  $ws['team1']->setLabel($q->getTeam1());
+	  $ws['team2']->setLabel($q->getTeam2());
+  }
 }
