@@ -59,6 +59,7 @@ abstract class BaseGame extends sfDoctrineRecord
              ));
         $this->hasColumn('active', 'boolean', null, array(
              'type' => 'boolean',
+             'default' => true,
              ));
     }
 

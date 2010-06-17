@@ -20,6 +20,7 @@ abstract class BaseOddsForm extends BaseFormDoctrine
       'team1'      => new sfWidgetFormInputText(),
       'draw'       => new sfWidgetFormInputText(),
       'team2'      => new sfWidgetFormInputText(),
+      'active'     => new sfWidgetFormInputCheckbox(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
@@ -30,6 +31,7 @@ abstract class BaseOddsForm extends BaseFormDoctrine
       'team1'      => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'draw'       => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'team2'      => new sfValidatorString(array('max_length' => 10, 'required' => false)),
+      'active'     => new sfValidatorBoolean(array('required' => false)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

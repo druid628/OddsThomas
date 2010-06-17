@@ -10,12 +10,14 @@ generator:
     route_prefix:          game
     with_doctrine_route:   true
     actions_base_class:    sfActions
-
     config:
       actions: ~
       fields:  ~
       list:    ~
       filter:  ~
       form:    ~
-      edit:    ~
-      new:     ~
+      edit:
+        display: [ team1, team2, active ]
+
+      new:
+        display: [ team1, team2, active ]

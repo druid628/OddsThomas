@@ -12,4 +12,10 @@
  */
 class Game extends BaseGame
 {
+
+	public function  __toString()
+	{
+		$name = $this->getTeam1() . " vs. " . $this->getTeam2();
+		return $name;
+	}
 }

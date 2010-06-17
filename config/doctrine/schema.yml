@@ -7,7 +7,7 @@ Game:
     team1:   { type: string(100), notnull: true }
     team2:   { type: string(100), notnull: true }
     result:  { type: string(10) }
-    active:  { type: boolean }
+    active:  { type: boolean, default: true }
 
 Odds:
   #actAs: [ Timestampable, Signable ]
@@ -19,6 +19,7 @@ Odds:
      team1:   { type: string(10) }
      draw:    { type: string(10) }
      team2:   { type: string(10) }
+     active:  { type: boolean, default: true }
   relations:
      Game: { local: game_id, foreign: game_id }
 
