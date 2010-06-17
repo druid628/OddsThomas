@@ -14,31 +14,18 @@ class Odds extends BaseOdds
 {
 	public function save(Doctrine_Connection $con = null)
 	{
-/*
-		$q = Doctrine_Query::create()
-			->from('Odds o')
-		    	->where('o.game_id = ' . $this->getGameId())
-		        ->andWhere('o.active = 1')
-		    	->fetchOne();
-
-		$this->deactivate($q);
-*/
+		$this->deactivateOthers();
 		parent::save();
 	}
 
-	public function deactivate($model)
+	public function deactivateOthers()
 	{
-		if(isset($model))
-		{
-				$model->setActive('false');
-				$model->save();
-		}
+		$q = Doctrine_Query::create()
+			->update('Odds o')
+			->set('active', '0')
+		    	->where('o.game_id = ' . $this->getGameId())
+		       	->andWhere('o.active = 1')
+		    	->execute();
 
-		#if(count($q) > 0){
-			#foreach($q as $key => $oddity)
-			#{
-				#$oddity->setActive('false');
-				#$oddity->save();
-			#}}
 	}
 }
