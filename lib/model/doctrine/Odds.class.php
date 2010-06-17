@@ -12,6 +12,7 @@
  */
 class Odds extends BaseOdds
 {
+/*
 	public function save(Doctrine_Connection $con = null)
 	{
 
@@ -35,4 +36,5 @@ class Odds extends BaseOdds
 
 		parent::save();
 	}
+*/
 }
