@@ -14,7 +14,7 @@ class Odds extends BaseOdds
 {
 	public function save(Doctrine_Connection $con = null)
 	{
-
+/*
 		$q = Doctrine_Query::create()
 			->from('Odds o')
 		    	->where('o.game_id = ' . $this->getGameId())
@@ -22,7 +22,7 @@ class Odds extends BaseOdds
 		    	->fetchOne();
 
 		$this->deactivate($q);
-
+*/
 		parent::save();
 	}
 
