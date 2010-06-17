@@ -10,7 +10,6 @@ generator:
     route_prefix:          game
     with_doctrine_route:   true
     actions_base_class:    sfActions
-    # extra: [show, print, export]
 
     config:
       actions: ~
@@ -20,4 +19,3 @@ generator:
       form:    ~
       edit:    ~
       new:     ~
-      show:    ~
