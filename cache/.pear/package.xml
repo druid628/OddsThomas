@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfAdminThemejRollerPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Admin generator theme based on jQuery UI ThemeRoller</summary>
+ <description>Admin generator theme based on jQuery UI ThemeRoller</description>
+ <lead>
+  <name>Gerald Estadieu</name>
+  <user>gestadieu</user>
+  <email>gestadieu@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-01-20</date>
+ <time>16:14:30</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.org/license">MIT license</license>
+ <notes>
+-
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="79b4f3901e741af12fd90da2d92a00ff" name="config/app.yml" role="data"/>
+   <file md5sum="0b3b0ae903ce487f7a4c89bd53aabbca" name="config/sfAdminThemejRollerPluginConfiguration.class.php" role="data"/>
+   <file md5sum="5d83545dfd9358a52821e2e16993cf47" name="data/generator/sfDoctrineModule/jroller/parts/actionsConfiguration.php" role="data"/>
+   <file md5sum="187b00b7688a356c0a8fda2b18b5865b" name="data/generator/sfDoctrineModule/jroller/parts/batchAction.php" role="data"/>
+   <file md5sum="9f82dcff11daf94c8c7a63363addfd0c" name="data/generator/sfDoctrineModule/jroller/parts/configuration.php" role="data"/>
+   <file md5sum="26918838d523b529d9f774e791cac59d" name="data/generator/sfDoctrineModule/jroller/parts/createAction.php" role="data"/>
+   <file md5sum="71592cb8c346fcb39dda67f256607d7e" name="data/generator/sfDoctrineModule/jroller/parts/deleteAction.php" role="data"/>
+   <file md5sum="a4fab933268d1601bfff828871f054e9" name="data/generator/sfDoctrineModule/jroller/parts/editAction.php" role="data"/>
+   <file md5sum="46f12d1ceeeed16491c3f8da5d2bc5bc" name="data/generator/sfDoctrineModule/jroller/parts/fieldsConfiguration.php" role="data"/>
+   <file md5sum="3a52a8dbd20482a492e56e36052aee90" name="data/generator/sfDoctrineModule/jroller/parts/filterAction.php" role="data"/>
+   <file md5sum="dac3f99dc0c36f9303cb53d13ae1a68a" name="data/generator/sfDoctrineModule/jroller/parts/filtersAction.php" role="data"/>
+   <file md5sum="7c2c5719bdab6cf40aab7d35c8990547" name="data/generator/sfDoctrineModule/jroller/parts/filtersConfiguration.php" role="data"/>
+   <file md5sum="b8e5fef1154d8c2216b21575b78d7ef8" name="data/generator/sfDoctrineModule/jroller/parts/indexAction.php" role="data"/>
+   <file md5sum="1b71611241c98d237ea3f5ee9a182a7c" name="data/generator/sfDoctrineModule/jroller/parts/newAction.php" role="data"/>
+   <file md5sum="8777bdf938aebdb06df1a9400d6f222c" name="data/generator/sfDoctrineModule/jroller/parts/paginationAction.php" role="data"/>
+   <file md5sum="ed8ba8d30c602ab90b8f91955bb0f403" name="data/generator/sfDoctrineModule/jroller/parts/paginationConfiguration.php" role="data"/>
+   <file md5sum="a9bae228542e7e1ce75b7c4324c33a8a" name="data/generator/sfDoctrineModule/jroller/parts/processFormAction.php" role="data"/>
+   <file md5sum="62d0b123c3ee454c273f8d4173718a29" name="data/generator/sfDoctrineModule/jroller/parts/showAction.php" role="data"/>
+   <file md5sum="66040851f61f7c7ac22dd4f9f89cd148" name="data/generator/sfDoctrineModule/jroller/parts/showConfiguration.php" role="data"/>
+   <file md5sum="5c04493898f09ea928f26465752bd863" name="data/generator/sfDoctrineModule/jroller/parts/sortingAction.php" role="data"/>
+   <file md5sum="f5e373a03619af21adfa43810254a726" name="data/generator/sfDoctrineModule/jroller/parts/sortingConfiguration.php" role="data"/>
+   <file md5sum="8718224f5d3202476017cd50bf9f1777" name="data/generator/sfDoctrineModule/jroller/parts/updateAction.php" role="data"/>
+   <file md5sum="f8fe194ae630ebc5fc15bbb64743a177" name="data/generator/sfDoctrineModule/jroller/skeleton/config/generator.yml" role="data"/>
+   <file md5sum="da34e84db6429e949168ba03f331f6ac" name="data/generator/sfDoctrineModule/jroller/skeleton/.DS_Store" role="data"/>
+   <file md5sum="1bbdbfb0fe86649736d46d97a52b3c06" name="data/generator/sfDoctrineModule/jroller/template/actions/actions.class.php" role="data"/>
+   <file md5sum="3f2ffbb852961461efae58e0548ed5b3" name="data/generator/sfDoctrineModule/jroller/template/lib/helper.php" role="data"/>
+   <file md5sum="17b723867985271a40ebab3057268c3b" name="data/generator/sfDoctrineModule/jroller/template/templates/.DS_Store" role="data"/>
+   <file md5sum="e1926421896c2930e3ab474dd7614c46" name="data/generator/sfDoctrineModule/jroller/template/templates/_assets.php" role="data"/>
+   <file md5sum="0b84c8d18e688059504029f78d4104ac" name="data/generator/sfDoctrineModule/jroller/template/templates/_filters.php" role="data"/>
+   <file md5sum="a3233239e6bb74df8a0e1cd175c77ec4" name="data/generator/sfDoctrineModule/jroller/template/templates/_filters_field.php" role="data"/>
+   <file md5sum="6b5af649fb009ace1661aae4961164b9" name="data/generator/sfDoctrineModule/jroller/template/templates/_flashes.php" role="data"/>
+   <file md5sum="cd5ee49eb8ca9bbff55a449f5dbf5d15" name="data/generator/sfDoctrineModule/jroller/template/templates/_form.php" role="data"/>
+   <file md5sum="2f49e1bb6b3a34e886650a54889c70f7" name="data/generator/sfDoctrineModule/jroller/template/templates/_form_actions.php" role="data"/>
+   <file md5sum="72c7775eaee007996378dcac32bd4731" name="data/generator/sfDoctrineModule/jroller/template/templates/_form_field.php" role="data"/>
+   <file md5sum="f24d7e132de12071cf9b0824d94f846c" name="data/generator/sfDoctrineModule/jroller/template/templates/_form_fieldset.php" role="data"/>
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="data/generator/sfDoctrineModule/jroller/template/templates/_form_footer.php" role="data"/>
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="data/generator/sfDoctrineModule/jroller/template/templates/_form_header.php" role="data"/>
+   <file md5sum="32fd69717c61b1924742d7e302fe26ab" name="data/generator/sfDoctrineModule/jroller/template/templates/_list.php" role="data"/>
+   <file md5sum="ee0df5b60f6ce1c666f0f237dfe867a1" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_actions.php" role="data"/>
+   <file md5sum="82659dafd02fff82e06825b1d263babc" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_batch_actions.php" role="data"/>
+   <file md5sum="a074b73c3d51338389db38d53cfc5407" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_field_boolean.php" role="data"/>
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_footer.php" role="data"/>
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_header.php" role="data"/>
+   <file md5sum="4d1a8bed4278fc27f9bb523d7738e448" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_td_actions.php" role="data"/>
+   <file md5sum="cc867a9d827e62829ae861203000b689" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_td_batch_actions.php" role="data"/>
+   <file md5sum="a91a139000b62798387b303882951cf9" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_td_stacked.php" role="data"/>
+   <file md5sum="ad955e6b002df097355ece1ca15de1d3" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_td_tabular.php" role="data"/>
+   <file md5sum="0baf9abe1924ee373ec85e2986ce669c" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_th_stacked.php" role="data"/>
+   <file md5sum="3d5dd3aadd13c985da22bc1e1427547a" name="data/generator/sfDoctrineModule/jroller/template/templates/_list_th_tabular.php" role="data"/>
+   <file md5sum="19041d019f94c399ee0a3f0deda244b8" name="data/generator/sfDoctrineModule/jroller/template/templates/_pagination.php" role="data"/>
+   <file md5sum="5b9339540864edb65e56572a3473c004" name="data/generator/sfDoctrineModule/jroller/template/templates/_show.php" role="data"/>
+   <file md5sum="83d1359f948d86a059dca15f0bb032b5" name="data/generator/sfDoctrineModule/jroller/template/templates/_show_actions.php" role="data"/>
+   <file md5sum="79dc98e70a0c173bc8af6381b403dd8a" name="data/generator/sfDoctrineModule/jroller/template/templates/_themeswitcher.php" role="data"/>
+   <file md5sum="2dc331bfc211fd1b66e00ab63ac4e696" name="data/generator/sfDoctrineModule/jroller/template/templates/editSuccess.php" role="data"/>
+   <file md5sum="74dfc0691eb5ffa1eaa83cf834c08bd0" name="data/generator/sfDoctrineModule/jroller/template/templates/indexSuccess.php" role="data"/>
+   <file md5sum="11fcbbc4f3e5bcb387c7247853c81c0d" name="data/generator/sfDoctrineModule/jroller/template/templates/newSuccess.php" role="data"/>
+   <file md5sum="ee5f3030a52d12c185b001f3cc51d62e" name="data/generator/sfDoctrineModule/jroller/template/templates/showSuccess.php" role="data"/>
+   <file md5sum="f38df670057f2c9654a5cf9e5b4f18b2" name="data/generator/sfDoctrineModule/jroller/template/.DS_Store" role="data"/>
+   <file md5sum="49e1c326714ed6c73d65c1229e531d97" name="data/generator/sfDoctrineModule/jroller/.DS_Store" role="data"/>
+   <file md5sum="a787ca606032c7ed9bc9fe3113744a60" name="data/generator/sfDoctrineModule/.DS_Store" role="data"/>
+   <file md5sum="adb5d110e303917b7f65204fa6c897c5" name="data/generator/.DS_Store" role="data"/>
+   <file md5sum="c4ed4badd50a9548ca7e9307c93fce6e" name="data/.DS_Store" role="data"/>
+   <file md5sum="8c8bab3903e16905a7ffe7580591b5fd" name="lib/helper/UIHelper.class.php" role="data"/>
+   <file md5sum="aa900d86671ea00358282ca3903987f6" name="lib/.DS_Store" role="data"/>
+   <file md5sum="f5dae46440e0c910dbb7a338992413f4" name="lib/jRollerDoctrineGenerator.class.php" role="data"/>
+   <file md5sum="9508681338253d1f866845796e8f9d35" name="web/css/jquery/base/images/.DS_Store" role="data"/>
+   <file md5sum="2a44fbdb7360c60122bcf6dcef0387d8" name="web/css/jquery/base/images/ui-bg_flat_0_aaaaaa_40x100.png" role="data"/>
+   <file md5sum="8692e6efddf882acbff144c38ea7dfdf" name="web/css/jquery/base/images/ui-bg_flat_75_ffffff_40x100.png" role="data"/>
+   <file md5sum="f8f4558e0b92ff2cd6136781533902ec" name="web/css/jquery/base/images/ui-bg_glass_55_fbf9ee_1x400.png" role="data"/>
+   <file md5sum="e5a8f32e28fd5c27bf0fed33c8a8b9b5" name="web/css/jquery/base/images/ui-bg_glass_65_ffffff_1x400.png" role="data"/>
+   <file md5sum="c12c6510dad3ebfa64c8a30e959a2469" name="web/css/jquery/base/images/ui-bg_glass_75_dadada_1x400.png" role="data"/>
+   <file md5sum="f4254356c2a8c9a383205ef2c4de22c4" name="web/css/jquery/base/images/ui-bg_glass_75_e6e6e6_1x400.png" role="data"/>
+   <file md5sum="5a3be2d8fff8324d59aec3df7b0a0c83" name="web/css/jquery/base/images/ui-bg_glass_95_fef1ec_1x400.png" role="data"/>
+   <file md5sum="72c593d16e998952cd8d798fee33c6f3" name="web/css/jquery/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" role="data"/>
+   <file md5sum="9129e086dc488d8bcaf808510bc646ba" name="web/css/jquery/base/images/ui-icons_222222_256x240.png" role="data"/>
+   <file md5sum="25162bf857a8eb83ea932a58436e1049" name="web/css/jquery/base/images/ui-icons_2e83ff_256x240.png" role="data"/>
+   <file md5sum="771099482bdc1571ece41073b1752596" name="web/css/jquery/base/images/ui-icons_454545_256x240.png" role="data"/>
+   <file md5sum="faf6f5dc44e713178784c1fb053990aa" name="web/css/jquery/base/images/ui-icons_888888_256x240.png" role="data"/>
+   <file md5sum="5d8808d43cefca6f6781a5316d176632" name="web/css/jquery/base/images/ui-icons_cd0a0a_256x240.png" role="data"/>
+   <file md5sum="b3e0d4a72052a06f6fc29e7697e0dc1b" name="web/css/jquery/base/.DS_Store" role="data"/>
+   <file md5sum="641494ea0afb5cc8d9aad672e6f39c15" name="web/css/jquery/base/ui.all.css" role="data"/>
+   <file md5sum="eab2d4756934598a6efa4cec52adc277" name="web/css/jquery/base/ui.base.css" role="data"/>
+   <file md5sum="35ace683c56937a3047a97641bb5f4d3" name="web/css/jquery/base/ui.core.css" role="data"/>
+   <file md5sum="127a2477a2a8d0f326767d6ce94d4f8a" name="web/css/jquery/base/ui.theme.css" role="data"/>
+   <file md5sum="2a44fbdb7360c60122bcf6dcef0387d8" name="web/css/jquery/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png" role="data"/>
+   <file md5sum="2b8885da50e2324557185fb0890ce2b7" name="web/css/jquery/redmond/images/ui-bg_flat_55_fbec88_40x100.png" role="data"/>
+   <file md5sum="f5d28f9ed0eead945e114696ae7b4c67" name="web/css/jquery/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png" role="data"/>
+   <file md5sum="e4710322ded115c72efbd0756234b6f2" name="web/css/jquery/redmond/images/ui-bg_glass_85_dfeffc_1x400.png" role="data"/>
+   <file md5sum="5a3be2d8fff8324d59aec3df7b0a0c83" name="web/css/jquery/redmond/images/ui-bg_glass_95_fef1ec_1x400.png" role="data"/>
+   <file md5sum="527d96cb51eaa54fa74a90db078008c4" name="web/css/jquery/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" role="data"/>
+   <file md5sum="4ebbd20039de922b3dc09d2c9fa31014" name="web/css/jquery/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" role="data"/>
+   <file md5sum="2b6a88b05b94c56fb478fe70dad68cdc" name="web/css/jquery/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" role="data"/>
+   <file md5sum="a222ba46b6b9bf684188d7eeed95194f" name="web/css/jquery/redmond/images/ui-icons_217bc0_256x240.png" role="data"/>
+   <file md5sum="25162bf857a8eb83ea932a58436e1049" name="web/css/jquery/redmond/images/ui-icons_2e83ff_256x240.png" role="data"/>
+   <file md5sum="fd8a992d3507f8c26d1dc9190457882f" name="web/css/jquery/redmond/images/ui-icons_469bdd_256x240.png" role="data"/>
+   <file md5sum="68e1a71e3b627383a631b5af9ad8275f" name="web/css/jquery/redmond/images/ui-icons_6da8d5_256x240.png" role="data"/>
+   <file md5sum="5d8808d43cefca6f6781a5316d176632" name="web/css/jquery/redmond/images/ui-icons_cd0a0a_256x240.png" role="data"/>
+   <file md5sum="9483b8a8c4577169e113b5a67f5c70e5" name="web/css/jquery/redmond/images/ui-icons_d8e7f3_256x240.png" role="data"/>
+   <file md5sum="9cf6119b1f66db26f4c423d9278e5dce" name="web/css/jquery/redmond/images/ui-icons_f9bd01_256x240.png" role="data"/>
+   <file md5sum="49b805c4b32fb49ea84da8d16ecd708f" name="web/css/jquery/redmond/jquery-ui.custom.css" role="data"/>
+   <file md5sum="2acd39a8d95ab7980dddb38d172d9262" name="web/css/jquery/.DS_Store" role="data"/>
+   <file md5sum="c3e4988ac79a547622db6ff0f230ec8c" name="web/css/.DS_Store" role="data"/>
+   <file md5sum="53fddcfc737f6a3a6fd3eacdd45ee842" name="web/css/fg.buttons.css" role="data"/>
+   <file md5sum="77bb4170f60eb617b514b33d3c240c6e" name="web/css/fg.menu.css" role="data"/>
+   <file md5sum="4d60d5c986f1cd2f97128eeda7378e27" name="web/css/jroller.css" role="data"/>
+   <file md5sum="3639aa8052e48370d7a0b213e5a61c3d" name="web/css/reset.css" role="data"/>
+   <file md5sum="bbba101dcd85509197ea2ca6f40ca40d" name="web/css/ui.selectmenu.css" role="data"/>
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="web/images/.sf" role="data"/>
+   <file md5sum="63211b101ba6d836f8a0c287add707e3" name="web/js/.DS_Store" role="data"/>
+   <file md5sum="4f43437df0a90492b85e63eec1033222" name="web/js/fg.menu.js" role="data"/>
+   <file md5sum="e0e54010e5b4d11b969b98f37764618d" name="web/js/jquery-ui.custom.min.js" role="data"/>
+   <file md5sum="bb381e2d19d8eace86b34d20759491a5" name="web/js/jquery.min.js" role="data"/>
+   <file md5sum="b3cc126d8732f980efa76e0ac6e16579" name="web/js/jroller.js" role="data"/>
+   <file md5sum="700077c907096141f9855e999768fa60" name="web/js/themeswitcher.js" role="data"/>
+   <file md5sum="cdb485975698420cf9dfe4a32bd03fdb" name="web/js/ui.selectmenu.js" role="data"/>
+   <file md5sum="e5874f37435729edb70c669dcb3fa983" name="web/.DS_Store" role="data"/>
+   <file md5sum="ee2c4c79d70768200d9e333a1f93bac9" name=".DS_Store" role="data"/>
+   <file md5sum="260f8c5ffbf19050d829bf7a1525dba0" name=".gitignore" role="data"/>
+   <file md5sum="f1e79e397b88e155416f5f9bce039a4f" name="LICENSE" role="data"/>
+   <file md5sum="5ea0295b0830309460593e37efa44e04" name="README" role="data"/>
+   <file md5sum="5ea0295b0830309460593e37efa44e04" name="README.markdown" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2010-01-20</date>
+   <notes>
+* fix minor issues for compatibility with symfony 1.3 and 1.4
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.4</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-09-05</date>
+   <notes>
+* add a 'show' view parameter for generator.yml. Default on link (when you specify =yourfield). It can also be added as a button on the object action list. To use this
+you must use the new jRollerDoctrineGenerator class in your generator.yml file.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.3</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-08-27</date>
+   <notes>
+* modify the app.yml to make it more in line with "standard" plugins. THIS VERSION BRAKES PREVIOUS app.yml config
+* add one new parameter in app.yml: theme_dir to easily set external theme without changing jquery. 
+* Remove 2 themes to keep only one in the plugin (add your own in your web folder).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-08-25</date>
+   <notes>
+* remove depreciated sfLoader in UI helper class
+* add README.markdown for github
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-08-25</date>
+   <notes>
+* fix README markdown and add more doc
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-08-25</date>
+   <notes>
+* initial public release
+   </notes>
+  </release>
+ </changelog>
+</package>
