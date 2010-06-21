@@ -9,6 +9,9 @@
     <?php include_javascripts() ?>
   </head>
   <body>
+      <?php if ($sf_user->isAuthenticated()): ?>
+    		<?php include_component('main','navi'); ?>
+      <?php endif; ?>
     <?php echo $sf_content ?>
   </body>
 </html>

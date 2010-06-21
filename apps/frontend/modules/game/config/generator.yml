@@ -13,11 +13,10 @@ generator:
     config:
       actions: ~
       fields:  ~
-      list:    ~
+      list:   ~
       filter:  ~
       form:    ~
       edit:
         display: [ team1, team2, active ]
-
       new:
         display: [ team1, team2, active ]
