@@ -1,8 +1,11 @@
 body
 {
 	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
-.navigation
+.oddNavigation
 {
 	background-color: #1009b8;
 	width: 100%;
@@ -10,7 +13,7 @@ body
 	color: #ffffff;
 }
 
-.navigation a
+.oddNavigation a
 {
   font-family: sans-serif;
   font-size: 4;
@@ -19,21 +22,45 @@ body
   text-decoration: none;
 }
 
-.navigation a:hover
+.oddNavigation a:hover
 {
   text-decoration: underline;
 }
 
-.navigation .menuItem
+.oddNavigation .oddMenuItem
 {
 	float: left;
 	margin-right: .5em;
 	margin-left: .5em;
 }
 
-.navigation .logout
+.oddNavigation .logout
 {
  	right: 1em;
 	float: right;
 	margin-right: 1.2em;
 }
+
+#yourBets
+{
+	border-spacing: 2px;
+	width: 700px;
+}
+
+#yourBets tr
+{
+	background-color: #0099FF;
+}
+
+#yourBets .altRow tr
+{
+	background-color: #CCFFFF !important;
+}
+
+#yourBets td
+{
+	vertical-align: center;
+	text-align: center;
+}
+
+

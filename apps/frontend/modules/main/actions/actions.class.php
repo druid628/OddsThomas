@@ -17,5 +17,11 @@ class mainActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+	  $this->bets = Doctrine_Query::create()
+	  	->from('Bet b')
+	      	->innerJoin('b.Game g')
+	        ->where('b.user_id = ' . $this->getUser()->getGuardUser()->getId())
+		->fetchArray();
+	  
   }
 }
