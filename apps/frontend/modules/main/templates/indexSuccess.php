@@ -23,4 +23,4 @@
 </table>
 
 <br/>
-.::. DruiD .::.
+.::. <a href="http://www.druid628.com/">DruiD</a> .::.

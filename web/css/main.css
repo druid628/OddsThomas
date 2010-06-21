@@ -5,6 +5,18 @@ body
 	margin-right: 0px;
 	margin-bottom: 0px;
 }
+a
+{
+	text-decoration: none;
+	text-shadow: #33ff00 0px 0px 10px;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	text-shadow: #003399 0px 0px 10px;
+}
+
 .oddNavigation
 {
 	background-color: #1009b8;
