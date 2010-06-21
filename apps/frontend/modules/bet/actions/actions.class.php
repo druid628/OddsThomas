@@ -20,12 +20,20 @@ class betActions extends autoBetActions
     if($request->hasParameter('game_id'))
     {
 	$ws = $this->form->getWidgetSchema();
-	$ws['game_id'] = new sfWidgetFormInputHidden(array('default'=> $request->getParameter('game_id')));
+	$ws['game_id'] = new sfWidgetFormInputHidden(array(), array('value'=> $request->getParameter('game_id')));
+	$ws['user_id'] = new sfWidgetFormInputHidden(array(), array('value'=> $this->getUser()->getGuardUser()->getId()));
+
+	$dc = Doctrine_Query::create()
+		->from('Odds o')
+		->where('o.game_id = ' . $request->getParameter('game_id'))
+		->execute();
+
 	$blah = Doctrine_Query::create()
 		->select('g.team1, g.team2')
 		->from('Game g')
 		->where('g.game_id = '. $request->getParameter('game_id'))
 		->fetchArray();
+
 	unset($blah[0]['game_id']);
 	$choices = array_merge($blah[0], array('draw' => 'Draw'));
 	#var_dump($choices);

@@ -16,4 +16,10 @@ class BetForm extends BaseBetForm
 	  $ws = $this->getWidgetSchema();
 	  $ws['odds'] = new sfWidgetFormInputHidden();
   }
+
+  public function save(Doctrine_Connection $conn)
+  {
+
+	  parent::save($conn)
+  }
 }

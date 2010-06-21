@@ -1,6 +1,5 @@
 Game:
-  #actAs: [ Timestampable, Signable ]
-  actAs: [ Timestampable ]
+  actAs: [ Timestampable, Signable ]
   tableName: game
   columns:
     game_id: { type: integer, primary: true, autoincrement: true }
@@ -10,8 +9,7 @@ Game:
     active:  { type: boolean, default: true }
 
 Odds:
-  #actAs: [ Timestampable, Signable ]
-  actAs: [ Timestampable ]
+  actAs: [ Timestampable, Signable ]
   tableName: odds
   columns:
      odds_id: { type: integer, primary: true, autoincrement: true }
@@ -24,8 +22,7 @@ Odds:
      Game: { local: game_id, foreign: game_id }
 
 Bet:
-  #actAs: [ Timestampable, Signable ]
-  actAs: [ Timestampable ]
+  actAs: [ Timestampable, Signable ]
   tableName: bet
   columns:
      bet_id:  { type: integer, primary: true, autoincrement: true }
