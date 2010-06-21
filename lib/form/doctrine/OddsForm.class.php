@@ -21,5 +21,6 @@ class OddsForm extends BaseOddsForm
 	  $ws = $this->getWidgetSchema();
 	  $ws['team1']->setLabel($q->getTeam1());
 	  $ws['team2']->setLabel($q->getTeam2());
+	  $ws['game_id'] = new sfWidgetFormInputHidden(array(), array('value' => $game_id));
   }
 }

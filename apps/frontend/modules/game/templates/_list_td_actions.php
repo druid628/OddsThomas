@@ -3,7 +3,11 @@
       
           <?php echo $helper->linkToBet($game, array(  'params' => 'class=fg-button-mini fg-button ui-state-default fg-button-icon-left ',  'class_suffix' => 'show',  'label' => 'Bet',  'ui-icon' => '',)) ?>
 
-          <?php echo $helper->linkToShow($game, array(  'params' => 'class=fg-button-mini fg-button ui-state-default fg-button-icon-left ',  'class_suffix' => 'show',  'label' => 'Show',  'ui-icon' => '',)) ?>
+	<?PHP  if($sf_user->hasPermission('AddOdds')): ?>
+          <?php echo $helper->linkToOdds($game, array(  'params' => 'class=fg-button-mini fg-button ui-state-default fg-button-icon-left ',  'class_suffix' => 'show',  'label' => 'New Odds',  'ui-icon' => '',)) ?>
+	<?PHP endif; ?>
+
+          <?php #echo $helper->linkToShow($game, array(  'params' => 'class=fg-button-mini fg-button ui-state-default fg-button-icon-left ',  'class_suffix' => 'show',  'label' => 'Show',  'ui-icon' => '',)) ?>
           
           <?php echo $helper->linkToEdit($game, array(  'params' => 'class=fg-button-mini fg-button ui-state-default fg-button-icon-left ',  'class_suffix' => 'edit',  'label' => 'Edit',  'ui-icon' => '',)) ?>
           
