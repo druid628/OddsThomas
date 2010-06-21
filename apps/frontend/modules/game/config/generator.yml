@@ -17,6 +17,6 @@ generator:
       filter:  ~
       form:    ~
       edit:
-        display: [ team1, team2, active ]
+        display: [ team1, team2, active, result ]
       new:
         display: [ team1, team2, active ]
